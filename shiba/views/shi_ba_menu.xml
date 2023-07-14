@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+    <menuitem id="shi_ba_menu_root" name="Shi Ba">
+        <menuitem id="shi_ba_first_level_menu" name="ShiBa">
+            <menuitem id="shi_ba_menu_action" action="shi_ba_action" />
+        </menuitem>
+    </menuitem>
+</odoo>

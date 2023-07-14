@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Action -->
+    <record id="shi_ba_action" model="ir.actions.act_window">
+        <field name="name">ShiBa action</field>
+        <field name="res_model">shi.ba</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Views -->
+    <record id="shi_ba_view_tree" model="ir.ui.view">
+        <field name="name">shi.ba.tree</field>
+        <field name="model">shi.ba</field>
+        <field name="arch" type="xml">
+            <tree string="Shi Baa">
+                <field name="user_id" />
+                <field name="card_name" />
+                <field name="mask" />
+                <field name="formatted_time" />
+                <field name="status" />
+                <field name="attendance_state" />
+                <field name="method" />
+                <field name="image_data" widget="image" readonly="1" />
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form -->
+    <record id="my_model_form_view" model="ir.ui.view">
+        <field name="name">shi.ba.form</field>
+        <field name="model">shi.ba</field>
+        <field name="arch" type="xml">
+            <form string="Shi Ba">
+                <group>
+                    <field name="attendance_state" />
+                    <field name="card_name" />
+                    <field name="create_time" />
+                    <field name="user_id" />
+                    <field name="mask" />
+                    <field name="status" />
+                    <field name="method" />
+                    <field name="image_url" />
+                    <field name="formatted_time" readonly="1" />
+                    <field name="image_data" widget="image" readonly="1" />
+                </group>
+            </form>
+        </field>
+    </record>
+
+</odoo>
